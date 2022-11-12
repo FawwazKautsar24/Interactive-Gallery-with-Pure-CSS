@@ -60,3 +60,33 @@ h1{
 .clear{
     clear: both;
 }
+
+/* Overlay */
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+
+    /* full image dihilangkan dulu dari awal */
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    text-align: center;
+    padding: 100px 0;
+    background-color: rgba(0, 0, 0, 0);
+    transition: 0.6s;
+}
+
+.overlay:target{
+    right: 0;
+    bottom: 0;
+
+    width: auto;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.overlay img{
+    max-height: 100%;
+}
