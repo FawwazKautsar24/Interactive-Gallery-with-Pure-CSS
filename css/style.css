@@ -25,3 +25,38 @@ h1{
     box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
     border-radius: 5px;
 }
+.container ul li{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #666;
+    margin-right: 20.01px;
+    
+    float: left;
+    position: relative;
+}
+.container ul li span{
+    display: block;
+    width: 120px;
+    height: 120px;
+    background-color: rgba(200, 200, 200, 0.5);
+    position: absolute;
+    top: 0;
+    text-align: center;
+    line-height: 120px;
+    color: #333;
+    text-shadow: 1px 1px 1px #ddd;
+    
+    opacity: 0;
+    transition: 0.3s;
+    transform: scale(0) rotate(0);
+}
+.container ul li a:hover span{
+    opacity: 1;
+    transform: scale(1) rotate(360deg);
+}
+
+.clear{
+    clear: both;
+}
